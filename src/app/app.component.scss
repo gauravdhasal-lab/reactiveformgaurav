@@ -1,0 +1,111 @@
+.mainDataWrap{
+    background-image: url('../assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .card{
+        max-width: 600px;
+        margin: 0 auto !important;
+        flex: 0 0 100%;
+        background-color: rgb(255 255 255 / 97%);
+        border-radius: 6px;
+        padding: 20px;
+        .row{
+            label{
+                font-size: 15px;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+            input{
+                margin-bottom: 10px;
+            }
+            ngx-intl-tel-input{
+                input{
+                    height: 38px;
+                    width:100%;
+                    border: 1px solid #ced4da;
+                    border-radius: 0.25rem;
+                    &:focus{
+                        border: 1px solid #ced4da;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+            .radioBox{
+                display: flex;
+                align-items: center;
+                label{
+                    margin-right: 10px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 400;
+                    input{
+                        margin-bottom: 0px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .passwordfieldwrap{
+                align-items: center;
+                input{
+                    margin-bottom: 0px;
+                    padding-right: 30px;
+                }
+                .input-group-append{
+                    position: absolute;
+                    right: 10px;
+                    z-index: 9999;
+                    top: 5px;
+                    button{
+                        background-color: transparent;
+                        border: none;
+                        &:focus{
+                            border: none;
+                            box-shadow: none;
+                            outline: none;
+                        }
+                    }
+                    &.is-invalid{
+                        display: none;
+                    }
+                }
+            }
+        }
+       .form-check{
+           margin-top: 20px;
+           margin-bottom: 20px;
+       }
+       .ActionWrap{
+           button{
+                &.btn-primary{
+                    background-color:green;
+                    color: #fff;
+                    border-color: green;
+                    margin-right: 10px;
+                }
+                &.btn-secondary{
+                    border-color: #000;
+                    color: #000;
+                    background-color: transparent;
+
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+
+                }
+                i{
+                    margin-right: 10px;
+                }
+                max-width: 220px;
+           }
+           
+       }
+    }
+ 
+}
+
+
+.h-100v{
+    height: 100vh !important;
+}
